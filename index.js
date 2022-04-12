@@ -1,5 +1,5 @@
 const express = require('express');
-const userRotes = require('./src/routes/UserRotes');
+const userRotes = require('./routes/UserRotes');
 
 const app = express();
 
