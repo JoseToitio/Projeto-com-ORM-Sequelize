@@ -6,5 +6,6 @@ const middlewares = require('../middlewares/category');
 const router = express.Router();
 
 router.post('/', tokenValidate, middlewares.validateCategory, Category.createCategory);
+router.get('/', tokenValidate, Category.getAllCategory);
 
 module.exports = router;
