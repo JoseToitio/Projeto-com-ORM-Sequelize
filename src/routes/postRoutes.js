@@ -11,5 +11,5 @@ middlewares.validateCategory,
 middlewares.validateContent,
 middlewares.validateTitle, 
 Post.createPost);
-
+router.get('/', tokenValidate, Post.getAllPost);
 module.exports = router;
