@@ -12,4 +12,6 @@ middlewares.validateContent,
 middlewares.validateTitle, 
 Post.createPost);
 router.get('/', tokenValidate, Post.getAllPost);
+router.get('/:id', tokenValidate, Post.getPostById);
+
 module.exports = router;
