@@ -28,7 +28,7 @@ const getPostById = async (req, res) => {
   try {
     const { id } = req.params;
     const post = await PostServices.getPostById(id);
-    return res.status(200).json(post.content);
+    return res.status(post.status).json(post.content);
   } catch (error) {
     console.log(error);
   }
